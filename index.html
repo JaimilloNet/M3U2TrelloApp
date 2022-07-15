@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/trello.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Avance 1 App</title>
+  </head>
+  <body class="" id="app">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <img class="logo" src="./assets/trello.jpg" alt="Logo Avance 1 App" />
+        <button class="btn btn-primary" id="btnNewTask">
+          Crear una nueva tarea
+        </button>
+      </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- canva -->
+    <main class="main">
+      <div class="row">
+        <!-- Columna tareas por hacer -->
+        <div class="col-md-3">
+          <div class="card">
+            <h2 class="card-header alert alert-danger">Por Hacer</h2>
+            <div class="card-body" id="todoTasks"></div>
+          </div>
+        </div>
+
+        <!-- Fin tareas por hacer -->
+        <!-- Columna tareas En Progreso -->
+        <div class="col-md-3">
+          <div class="card">
+            <h2 class="card-header alert alert-warning">En Progreso</h2>
+            <div class="card-body" id="progressTasks"></div>
+          </div>
+        </div>
+        <!-- Fin tareas En Progreso -->
+        <!-- Columna tareas finalizadas -->
+        <div class="col-md-3">
+          <div class="card">
+            <h2 class="card-header alert alert-success">Finalizado</h2>
+            <div class="card-body" id="doneTasks"></div>
+          </div> 
+        </div>
+        <!-- Fin tareas finalizadas -->
+        <div class="col-md-3">
+          <div class="card">
+            <h2 class="card-header alert alert-secondary">Nueva Tarea</h2>
+            <div class="card-body">
+              <form class="form-group" id="formNewTask">
+                <!-- Input titulo-->
+                <div class="form-group">
+                  <label for="titleTask" class="form-label">Titulo:</label>
+                  <input
+                    id="titleTask"
+                    name="titleTask"
+                    type="text"
+                    class="form-control"
+                    placeholder="Escribe un titulo para la Tarea"
+                  />
+                </div>
+                <!-- Input titulo-->
+  
+                <!-- Input responsable -->
+                <div class="form-group">
+                  <label for="responsibleTask" class="form-label"
+                    >Responsible:</label
+                  >
+                  <select
+                    name="responsibleTask"
+                    class="form-control"
+                    id="responsibleTask"
+                  >
+                    <option value="">--Seleccionar--</option>
+                    <option value="user01">User 01</option>
+                    <option value="user02">User 02</option>
+                  </select>
+                </div>
+                <!-- Fin input responsable -->
+  
+                <!-- Input deadline -->
+                <div class="form-group">
+                  <label for="deadLineTask" class="form-label"
+                    >Plazo de Entrega:</label
+                  >
+                  <select
+                    name="responsibleTask"
+                    class="form-control"
+                    id="responsibleTask"
+                  >
+                    <option value="">--Seleccionar--</option>
+                    <option value="oneDay">1 Día</option>
+                    <option value="twoDay">2 Días</option>
+                    <option value="sevenDay">1 semana</option>
+                  </select>
+                </div>
+                <!--Fin deadline -->
+  
+                <!-- Botones -->
+                <div class="row">
+                  <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                    <button
+                      type="reset"
+                      class="btn btn-danger"
+                      id="btnCancelNewtask"
+                    >
+                      Cancelar
+                    </button>
+                  </div>
+                </div>
+                <!-- Fin deadline -->
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+    <!-- Fin canva -->
+
+    <!-- Aside - Crear nueva tarea -->
+
+    <aside class="aside" id="modalNewTask">
+      <div class=""></div>
+    </aside>
+    <!-- Fin Aside -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"
+  ></script>
+</html>
