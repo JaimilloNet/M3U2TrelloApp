@@ -17,11 +17,8 @@
   <body class="" id="app">
     <!-- Header -->
     <header class="header">
-      <div class="container">
-        <img class="logo" src="./assets/trello.jpg" alt="Logo Avance 1 App" />
-        <button class="btn btn-primary" id="btnNewTask">
-          Crear una nueva tarea
-        </button>
+      <div class="">
+        <img class="logo" src="./assets/trello.jpg" alt="5c" width="250pc" />
       </div>
     </header>
     <!-- Fin Header -->
@@ -58,29 +55,35 @@
           <div class="card">
             <h2 class="card-header alert alert-secondary">Nueva Tarea</h2>
             <div class="card-body">
-              <form class="form-group" id="formNewTask">
+              <form  id="formTasks">
+                <div class="modal-body">
+                   </div>
                 <!-- Input titulo-->
                 <div class="form-group">
-                  <label for="titleTask" class="form-label">Titulo:</label>
+                  <label for="titleTasks" class="form-label">Titulo:</label>
                   <input
-                    id="titleTask"
-                    name="titleTask"
+                    id="titleTasks"
+                    name="titleTasks"
                     type="text"
                     class="form-control"
                     placeholder="Escribe un titulo para la Tarea"
                   />
                 </div>
+                <div class="form-group">
+                  <label for="title-tasks" class="form-label">Descripción:</label>
+                  <textarea class="form-control" id="detailsTasks" placeholder="Ingrese la descripción"></textarea>
+                </div>
                 <!-- Input titulo-->
   
                 <!-- Input responsable -->
                 <div class="form-group">
-                  <label for="responsibleTask" class="form-label"
+                  <label for="responsibleTasks" class="form-label"
                     >Responsible:</label
                   >
                   <select
-                    name="responsibleTask"
+                    name="responsibleTasks"
                     class="form-control"
-                    id="responsibleTask"
+                    id="responsibleTasks"
                   >
                     <option value="">--Seleccionar--</option>
                     <option value="user01">User 01</option>
@@ -91,13 +94,13 @@
   
                 <!-- Input deadline -->
                 <div class="form-group">
-                  <label for="deadLineTask" class="form-label"
+                  <label for="deadLineTasks" class="form-label"
                     >Plazo de Entrega:</label
                   >
                   <select
-                    name="responsibleTask"
+                    name="responsibleTasks"
                     class="form-control"
-                    id="responsibleTask"
+                    id="responsibleTasks"
                   >
                     <option value="">--Seleccionar--</option>
                     <option value="oneDay">1 Día</option>
@@ -105,6 +108,7 @@
                     <option value="sevenDay">1 semana</option>
                   </select>
                 </div>
+                <input type="date" name="" id="">
                 <!--Fin deadline -->
   
                 <!-- Botones -->
@@ -114,7 +118,7 @@
                     <button
                       type="reset"
                       class="btn btn-danger"
-                      id="btnCancelNewtask"
+                      id="btnCancelNewtasks"
                     >
                       Cancelar
                     </button>
@@ -132,7 +136,7 @@
 
     <!-- Aside - Crear nueva tarea -->
 
-    <aside class="aside" id="modalNewTask">
+    <aside class="aside" id="modalNewTasks">
       <div class=""></div>
     </aside>
     <!-- Fin Aside -->
@@ -142,4 +146,14 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"
   ></script>
+
+  <!--- Recursos externos -->
+  <script src="./aset/js/axios.js"></script>
+  <script src="js/libraries/moment.js"></script>
+  <script src="./asset/js/draggable.js"></script>
+  <script src="./asset/js/hammer.js"></script>
+
+  <script src="./api.request.js"></script>
+  <script src="./asset/js/index.js"></script>
+  <script src="./asset/js/tasks.js"></script>
 </html>
