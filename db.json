@@ -14,7 +14,7 @@
         "title": "Backend",
         "person": "Alberto",
         "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit",
-        "state": "to-do",
+        "state": "pending",
         "deadline": 1615524959,
         "created": 1615352159
       }  

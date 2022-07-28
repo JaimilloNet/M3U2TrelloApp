@@ -1,9 +1,9 @@
 // Creación de varible para guarda la URL de la API Fake
-const API_URL = "https://https://my-json-server.typicode.com/JaimilloNet/M3U2TrelloApp";
+const API_URL = "https://my-json-server.typicode.com/JaimilloNet/M3U2TrelloApp";
 
 //Hacemos una petición get a la API Fake utlizando los templates strings
 axios
-  .get(`${API_URL}/tasks`)
+  .get(`${API_URL}/task`)
   .then((res) => showAllTasks(res.data))
   .catch((err) => console.error(err));
 
@@ -66,7 +66,7 @@ const createTask = (task) => {
   let columnDone = document.querySelector("#doneTasks");
 
   // Preguntamos dependiendo el state que trae nuestra API es igual a to-do lo ubique en esa columna
-  if (task.state === "to-do") {
+  if (task.state === "pending") {
     columnToDo.appendChild(newTask);
   }
   if (task.state === "in-progress") {

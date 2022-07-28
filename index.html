@@ -11,7 +11,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Avance 1 App</title>
   </head>
   <body class="" id="app">
@@ -55,15 +55,15 @@
           <div class="card">
             <h2 class="card-header alert alert-secondary">Nueva Tarea</h2>
             <div class="card-body">
-              <form  id="formTasks">
+              <form  id="formTask">
                 <div class="modal-body">
                    </div>
                 <!-- Input titulo-->
                 <div class="form-group">
                   <label for="titleTasks" class="form-label">Titulo:</label>
                   <input
-                    id="titleTasks"
-                    name="titleTasks"
+                    id="titleTask"
+                    name="titleTask"
                     type="text"
                     class="form-control"
                     placeholder="Escribe un titulo para la Tarea"
@@ -71,7 +71,7 @@
                 </div>
                 <div class="form-group">
                   <label for="title-tasks" class="form-label">Descripción:</label>
-                  <textarea class="form-control" id="detailsTasks" placeholder="Ingrese la descripción"></textarea>
+                  <textarea class="form-control" id="detailsTask" placeholder="Ingrese la descripción"></textarea>
                 </div>
                 <!-- Input titulo-->
   
@@ -83,7 +83,7 @@
                   <select
                     name="responsibleTasks"
                     class="form-control"
-                    id="responsibleTasks"
+                    id="responsibleTask"
                   >
                     <option value="">--Seleccionar--</option>
                     <option value="user01">User 01</option>
@@ -100,7 +100,7 @@
                   <select
                     name="responsibleTasks"
                     class="form-control"
-                    id="responsibleTasks"
+                    id="deadLineTask"
                   >
                     <option value="">--Seleccionar--</option>
                     <option value="oneDay">1 Día</option>
@@ -114,7 +114,7 @@
                 <!-- Botones -->
                 <div class="row">
                   <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Guardar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                     <button
                       type="reset"
                       class="btn btn-danger"
@@ -136,9 +136,6 @@
 
     <!-- Aside - Crear nueva tarea -->
 
-    <aside class="aside" id="modalNewTasks">
-      <div class=""></div>
-    </aside>
     <!-- Fin Aside -->
   </body>
   <script
@@ -148,12 +145,12 @@
   ></script>
 
   <!--- Recursos externos -->
-  <script src="./aset/js/axios.js"></script>
-  <script src="js/libraries/moment.js"></script>
-  <script src="./asset/js/draggable.js"></script>
-  <script src="./asset/js/hammer.js"></script>
+  <script src="./js/axios.js"></script>
+  <script src="./js/moment.js"></script>
+  <script src="./js/draggable.js"></script>
+  <script src="./js/hammer.js"></script>
 
-  <script src="./api.request.js"></script>
-  <script src="./asset/js/index.js"></script>
-  <script src="./asset/js/tasks.js"></script>
+  <script src="./js/api/request.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/tasks.js"></script>
 </html>

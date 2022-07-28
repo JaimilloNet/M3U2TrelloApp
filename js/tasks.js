@@ -17,7 +17,7 @@ form.addEventListener('submit', (ev) => {
     state: 'pending'
   };
   // Hacemos una petición POST para enviar la información a la API y le pasamos el arreglo data con la información nueva
-  axios.post(`${ApiURL}/task`, data)
+  axios.post(`${API_URL}/task`, data)
     .then((res) => {
       //Mandamos la información a la API
       createTask(res.data);
